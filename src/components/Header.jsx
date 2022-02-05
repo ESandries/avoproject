@@ -1,6 +1,4 @@
 import React from 'react';
-import "../styles/header.css";
-import '../styles/variables.css';
 import logoEsandries from '../assets/logo/Isotipo-Esandries.svg';
 
 const Header = () => {
