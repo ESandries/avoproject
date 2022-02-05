@@ -1,6 +1,6 @@
-@import "./styles/variables.css";
-@import "./styles/header.css";
-@import "./projects//avo-project/avoStyles.css";
+@import "@styles/variables.css";
+@import "@styles/header.css";
+@import "@projects/avo-project/avoStyles.css";
 
 body {
   background-color: var(--avodark);
