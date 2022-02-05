@@ -1,0 +1,66 @@
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}
+.mainHeader--logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.mainHeader {
+  background-color: var(--avosemidark);
+  padding-block: 0.75em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainHeader--links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family: var(--font-lato);
+  font-weight: bold;
+  font-size: 1.12em;
+}
+.mainHeader--links ul li a {
+  text-decoration: none;
+  color: var(--primary-off);
+}
+
+.mainHeader--links ul li a:hover {
+  color: var(--primary-on);
+}
+
+.mainHeader--CTA {
+  display: flex;
+  align-items: center;
+  border-radius: 0.75em;
+}
+
+.button-CTA {
+  color: var(--avosemidark);
+  font-family: var(--font-lato);
+  padding-inline: 12px;
+  padding-block: 6px;
+  background-color: var(--primary-off);
+  text-decoration: none;
+  border-radius: 0.7em;
+}
+@media only screen and (max-width: 600px) {
+  .mainHeader--links {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+  #avoProjectDescription {
+    padding-inline: 24px;
+  }
+}
