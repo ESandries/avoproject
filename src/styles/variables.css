@@ -1,0 +1,11 @@
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}

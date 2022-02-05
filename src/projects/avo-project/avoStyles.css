@@ -1,0 +1,72 @@
+@import "../../styles/variables.css"; /*This line import the variables*/
+@import "../../styles/header.css"; /*This is the styles for the header*/
+
+body {
+  background-color: var(--avodark);
+  margin: 0;
+  padding: 0;
+}
+
+.avoProjectName {
+  color: var(--primary-on);
+  font-family: var(--font-lato);
+  text-align: center;
+}
+
+.avoProjectDescription {
+  color: var(--white);
+  font-family: var(--font-monts);
+  font-size: 1em;
+  max-width: 40em;
+  margin: 2em auto;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#avoProductContainer {
+  padding: 24px;
+  display: grid;
+  max-width: 72em;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.avoProductCard {
+  background-color: var(--avosemidark);
+  border-radius: 0.75em;
+  border: var(--primary) 1.5px solid;
+  max-width: 19.5em;
+  color: var(--white);
+  padding: 24px;
+}
+
+.avoProductImage {
+  width: 100%;
+}
+
+.avoProductName {
+  font-family: var(--font-lato);
+  font-size: 1.4em;
+}
+
+.avoProductDescription {
+  font-family: var(--font-monts);
+  font-size: 0.75em;
+}
+
+@media only screen and (max-width: 600px) {
+  #avoProductContainer {
+    justify-content: center;
+    padding-inline: 24px;
+    display: flex;
+    max-width: 75em;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .avoProjectDescription {
+    padding-inline: 24px;
+  }
+}

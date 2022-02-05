@@ -1,14 +1,3 @@
-:root {
-  --white: #ffffff;
-  --primary: #ff0380;
-  --primary-on: #ff359a;
-  --primary-off: #ff68b3;
-  --avodark: #1a040d;
-  --avosemidark: #210511;
-
-  --font-lato: "Lato", sans-serif;
-  --font-monts: "Montserrat", sans-serif;
-}
 .mainHeader--logoContainer {
   display: flex;
   align-items: center;
@@ -59,8 +48,5 @@
     width: 100%;
     justify-content: space-between;
     min-height: 300px;
-  }
-  #avoProjectDescription {
-    padding-inline: 24px;
   }
 }
