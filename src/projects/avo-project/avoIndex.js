@@ -1,15 +1,14 @@
-const baseUrl = 'https://platzi-avo.vercel.app'
-const appNote = document.querySelector('#avoProductContainer')
+const baseUrl = "https://platzi-avo.vercel.app";
+const appNote = document.querySelector("#avoProductContainer");
 
 const formatPrice = (price) => {
+  const newPrice = new window.Intl.NumberFormat("en-EN", {
+    style: "currency",
+    currency: "USD",
+  }).format(price);
 
-    const newPrice = new window.Intl.NumberFormat('en-EN', {
-        style: "currency",
-        currency: "USD"
-    }).format(price)
-
-    return newPrice;
-}
+  return newPrice;
+};
 
 async function fetchData() {
   const response = await fetch(`${baseUrl}/api/avo`),
@@ -20,7 +19,7 @@ async function fetchData() {
     // create image
     const image = document.createElement("img");
     image.src = `${baseUrl}${item.image}`;
-    image.className = 'avoProductImage';
+    image.className = "avoProductImage";
     // create title
     const title = document.createElement("h2");
     title.textContent = item.name;
@@ -37,7 +36,7 @@ async function fetchData() {
 
     const container = document.createElement("div");
     container.className = "avoProductCard";
-    container.append(image, title , price);
+    container.append(image, title, price);
 
     allItems.push(container);
   });
