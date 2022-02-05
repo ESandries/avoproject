@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.svg$/,
@@ -48,9 +48,7 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html",
     }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     historyApiFallback: true,

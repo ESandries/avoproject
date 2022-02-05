@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .mainHeader--logoContainer {
   display: flex;
   align-items: center;

@@ -1,0 +1,233 @@
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}
+
+.mainHeader--logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.mainHeader {
+  background-color: var(--avosemidark);
+  padding-block: 0.75em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainHeader--links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family: var(--font-lato);
+  font-weight: bold;
+  font-size: 1.12em;
+}
+.mainHeader--links ul li a {
+  text-decoration: none;
+  color: var(--primary-off);
+}
+
+.mainHeader--links ul li a:hover {
+  color: var(--primary-on);
+}
+
+.mainHeader--CTA {
+  display: flex;
+  align-items: center;
+  border-radius: 0.75em;
+}
+
+.button-CTA {
+  color: var(--avosemidark);
+  font-family: var(--font-lato);
+  padding-inline: 12px;
+  padding-block: 6px;
+  background-color: var(--primary-off);
+  text-decoration: none;
+  border-radius: 0.7em;
+}
+@media only screen and (max-width: 600px) {
+  .mainHeader--links {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+}
+
+/*This line import the variables*/ /*This is the styles for the header*/
+
+body {
+  background-color: var(--avodark);
+  margin: 0;
+  padding: 0;
+}
+
+.avoProjectName {
+  color: var(--primary-on);
+  font-family: var(--font-lato);
+  text-align: center;
+}
+
+.avoProjectDescription {
+  color: var(--white);
+  font-family: var(--font-monts);
+  font-size: 1em;
+  max-width: 40em;
+  margin: 2em auto;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#avoProductContainer {
+  padding: 24px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 72em;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.avoProductCard {
+  background-color: var(--avosemidark);
+  border-radius: 0.75em;
+  border: var(--primary) 1.5px solid;
+  max-width: 19.5em;
+  color: var(--white);
+  padding: 24px;
+}
+
+.avoProductImage {
+  width: 100%;
+}
+
+.avoProductName {
+  font-family: var(--font-lato);
+  font-size: 1.4em;
+}
+
+.avoProductDescription {
+  font-family: var(--font-monts);
+  font-size: 0.75em;
+}
+
+@media only screen and (max-width: 600px) {
+  #avoProductContainer {
+    justify-content: center;
+    padding-inline: 24px;
+    display: flex;
+    max-width: 75em;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .avoProjectDescription {
+    padding-inline: 24px;
+  }
+}
+
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --primary: #ff0380;
+  --primary-on: #ff359a;
+  --primary-off: #ff68b3;
+  --avodark: #1a040d;
+  --avosemidark: #210511;
+
+  --font-lato: "Lato", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+}
+
+.mainHeader--logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.mainHeader {
+  background-color: var(--avosemidark);
+  padding-block: 0.75em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainHeader--links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family: var(--font-lato);
+  font-weight: bold;
+  font-size: 1.12em;
+}
+.mainHeader--links ul li a {
+  text-decoration: none;
+  color: var(--primary-off);
+}
+
+.mainHeader--links ul li a:hover {
+  color: var(--primary-on);
+}
+
+.mainHeader--CTA {
+  display: flex;
+  align-items: center;
+  border-radius: 0.75em;
+}
+
+.button-CTA {
+  color: var(--avosemidark);
+  font-family: var(--font-lato);
+  padding-inline: 12px;
+  padding-block: 6px;
+  background-color: var(--primary-off);
+  text-decoration: none;
+  border-radius: 0.7em;
+}
+@media only screen and (max-width: 600px) {
+  .mainHeader--links {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+}
+
+body {
+  background-color: var(--avodark);
+  margin: 0;
+  padding: 0;
+}
+
