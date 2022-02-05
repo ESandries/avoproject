@@ -1,6 +1,3 @@
-@import "../../styles/variables.css"; /*This line import the variables*/
-@import "../../styles/header.css"; /*This is the styles for the header*/
-
 body {
   background-color: var(--avodark);
   margin: 0;
